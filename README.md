@@ -8,7 +8,7 @@ Zunächst einmal können Sie dieses Repository wieder über git klonen.
 
 In dieser Übung werden wir Docker Compose verwenden, um ein kleines Container-Cluster bestehend aus einer Wordpress-Instanz und einer MySQL-Instanz aufzusetzen. Hier finden Sie weitergehende Informationen zu Docker Compose: [https://docs.docker.com/compose/](https://docs.docker.com/compose/)  
 
-Legen Sie zunächst einen Ordner für diese Aufgabe an (z. B. Aufgabe 1).  Legen Sie dort die folgende Docker Compose Konfigurationsdatei ab:
+Legen Sie zunächst einen Ordner für diese Aufgabe an (z. B. Aufgabe1).  Legen Sie dort die folgende Docker Compose Konfigurationsdatei ab:
    ```bash
 docker-compose.yml
    ```
@@ -16,7 +16,7 @@ Starten Sie die App mit:
    ```bash
 docker compose up
    ```
-Prüfen Sie die beiden laufenden Container einmal in Docker.  
+Prüfen Sie die beiden laufenden Container einmal im Docker Desktop Dashboard.  
 
 Öffnen Sie ihren Browser mit der URL:
    ```bash
