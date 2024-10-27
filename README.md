@@ -26,6 +26,64 @@ Sie sollten nun die Wordpress-Startseite sehen.
 
 Stoppen Sie danach die Container wieder.
 
+**Aufgabe 2 - Ein erstes Kubernetes Cluster aufsetzen**
+
+Installieren Sie [kubectl](https://kubernetes.io/de/docs/tasks/tools/install-kubectl/)
+
+Überprüfen Sie über die Kommandozeile, ob kubectl erfolgreich installiert wurde mittels
+   ```bash
+kubectl version
+   ```
+Sie können nun ein einfaches Test-Cluster mit einem einfachen Server starten mittels
+
+   ```bash
+kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agnhost:2.39 -- /agnhost netexec --http-port=8080
+
+   ```
+Lassen Sie sich die laufenden Deployments anzeigen mit:
+   ```bash
+kubectl get deployments
+
+   ```
+Lassen Sie sich die laufenden Pods anzeigen mit:
+   ```bash
+kubectl get pods
+
+   ```
+Öffnen Sie das Docker Desktop Dashboard und stoppen Sie dort den laufenden Pod bzw. Container. Was passiert?
+
+Lassen Sie sich in der Kommandozeile die Cluster Events anzeigen:
+   ```bash
+kubectl get events
+
+   ```
+Öffnen Sie ihren Webbrowser mit 
+   ```bash
+http://localhost:8080
+   ```
+Was ist zu sehen?
+
+Fügen Sie den Cluster einen Load Balancer Service hinzu, der den Dienst nach außen hin verfügbar macht:
+   ```bash
+kubectl expose deployment hello-node --type=LoadBalancer --port=8080
+
+   ```
+Prüfen Sie, ob der Service läuft mit:
+   ```bash
+kubectl get services
+
+   ```
+Probieren Sie nun noch einmal den Aufruf über ihren Webbrowser.
+
+Löschen Sie die ressourcen anschließend wieder mit:
+   ```bash
+kubectl delete service hello-node
+
+   ```
+   ```bash
+kubectl delete deployment hello-node
+
+   ```
 
 
 
