@@ -34,7 +34,7 @@ Installieren Sie [kubectl](https://kubernetes.io/de/docs/tasks/tools/install-kub
    ```bash
 kubectl version
    ```
-Sie können nun ein einfaches Test-Cluster mit einem einfachen Server starten mittels
+Sie können nun ein einfaches Test-Cluster mit einem einfachen Server starten:
 
    ```bash
 kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agnhost:2.39 -- /agnhost netexec --http-port=8080
@@ -63,7 +63,7 @@ http://localhost:8080
    ```
 Was ist zu sehen?
 
-Fügen Sie den Cluster einen Load Balancer Service hinzu, der den Dienst nach außen hin verfügbar macht:
+Fügen Sie dem Cluster einen Load Balancer Service hinzu, der den Dienst nach außen hin verfügbar macht:
    ```bash
 kubectl expose deployment hello-node --type=LoadBalancer --port=8080
 
@@ -75,7 +75,7 @@ kubectl get services
    ```
 Probieren Sie nun noch einmal den Aufruf über ihren Webbrowser.
 
-Löschen Sie die ressourcen anschließend wieder mit:
+Löschen Sie die Ressourcen anschließend wieder mit:
    ```bash
 kubectl delete service hello-node
 
