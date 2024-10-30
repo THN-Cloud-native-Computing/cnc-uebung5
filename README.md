@@ -122,6 +122,8 @@ Starten Sie das Cluster und schauen Sie sich unter den "Stats" im Docker Desktop
 
 Was würde passieren, wenn die Obergrenzen für CPU und RAM überschritten werden?  
 
+Finden Sie heraus, welches die kleinstmöglichen Grenzen für CPU und Speicher sind. Passen Sie die Konfigurationsdatei entsprechend an. Starten Sie das Cluster erneut und prüfen Sie im Docker Desktop Dashboard den Status des Containers.  
+
 
 
 # Übung 4
