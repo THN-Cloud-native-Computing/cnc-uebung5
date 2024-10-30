@@ -116,6 +116,8 @@ Passen Sie die Konfigurationsdatei aus Aufgabe 3 zunächst wieder so an, dass nu
 - Untergrenzen: CPU 250m / RAM 64Mi
 - Obergrenzen: CPU 500m / RAM 128Mi
 
+Was bedeuten die Angaben?  
+
 Starten Sie das Cluster und schauen Sie sich unter den "Stats" im Docker Desktop Dashboard die CPU- und RAM-Nutzung an.  
 
 Was würde passieren, wenn die Obergrenzen für CPU und RAM überschritten werden?  
