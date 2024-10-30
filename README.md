@@ -120,6 +120,8 @@ Was bedeuten die Angaben?
 
 Starten Sie das Cluster und schauen Sie sich unter den "Stats" im Docker Desktop Dashboard die CPU- und RAM-Nutzung an.  
 
+Rufen Sie den Server über ihren Webbrowser auf und schauen Sie sich die Änderungen in der Auslastung in "Stats" an.
+
 Was würde passieren, wenn die Obergrenzen für CPU und RAM überschritten werden?  
 
 Finden Sie heraus, welches die kleinstmöglichen Grenzen für CPU und Speicher sind. Passen Sie die Konfigurationsdatei entsprechend an.   
@@ -127,6 +129,35 @@ Finden Sie heraus, welches die kleinstmöglichen Grenzen für CPU und Speicher s
 Starten Sie das Cluster erneut und prüfen Sie im Docker Desktop Dashboard den Status des Containers.  
 
 Experimentieren Sie mit anderen Werten für die Ressource Limits und prüfen Sie den Status des Containers.
+
+**Aufgabe 5 - Automatisches Skalieren mit den Horizontal Pod Autoscaler (HPA)**
+
+Setzen Sie die Ressource Limits zunächst wieder so, wie zu Beginn von Aufgabe 4.  
+
+Konfigurieren Sie nun einen Horizontal Pod Autoscaler (HPA), der bei überschreiten von 80% der CPU-Auslastung einen weiteren Pod startet.
+
+Rufen Sie den Server über ihren Webbrowser auf und schauen Sie sich die Änderungen in der Auslastung in "Stats" an.
+
+Installieren Sie sich das Programm [GNU Parallels](https://www.gnu.org/software/parallel/)  
+
+Hinweis: Sie können das Programm über Homebrew einfach installieren über:
+   ```bash
+brew install parallel
+
+   ```
+
+Über folgenden Befehl können Sie eine Sequenz von 1000 parallelen Request (jeweils 100) an den Server schicken:
+   ```bash
+seq 1 1000 | parallel -j 100 curl -s http://localhost:30000/
+
+   ```
+Schauen Sie sich nun die Änderungen in der Auslastung in "Stats" an.  
+
+Experimentieren Sie mit den Ressource Limits und der Anzahl und dem Umfang der parallelen Request so, dass man die Aktivitäten des HPA im Dashboard verfolgen kann.
+
+
+
+
 
 
 
