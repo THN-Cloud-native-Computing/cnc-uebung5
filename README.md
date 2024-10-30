@@ -84,7 +84,28 @@ kubectl delete service hello-node
 kubectl delete deployment hello-node
 
    ```
+**Aufgabe 3 - Ein Kubernetes Cluster mit mehreren Pods starten**
 
+Mit der Konfigurationsdatei 
+   ```bash
+nginx-deployment.yaml
+
+   ```
+können Sie ein einfaches Kubernetes Cluster starten, in dem ein nginx Server in einem Pod läuft und über den NodePort Service von außen verfügbar macht.  
+
+Starten Sie das Cluster einmal mit
+   ```bash
+kubectl apply -f nginx-deployment.yaml
+
+   ```
+Sie sollten den Dienst in ihrem Browser dann erreichen können über:
+   ```bash
+http://localhost:30000
+
+   ```
+Löschen Sie die Ressourcen anschließend wieder.  
+
+Ändern Sie die Konfigurationsdatei so, dass jeweils 3 Pods mit Servern gestartet werden. Was passiert, wenn Sie die Container stoppen?
 
 
 # Übung 4
