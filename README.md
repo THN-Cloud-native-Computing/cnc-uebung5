@@ -107,6 +107,20 @@ Löschen Sie die Ressourcen anschließend wieder.
 
 Ändern Sie die Konfigurationsdatei so, dass jeweils 3 Pods mit Servern gestartet werden. Was passiert, wenn Sie die Container stoppen?
 
+**Aufgabe 4 - Ressource Limits**
+
+Passen Sie die Konfigurationsdatei aus Aufgabe 3 zunächst wieder so an, dass nur ein Pod gestartet wird.  
+
+Ändern Sie die Konfigurationsdatei nun so, dass für die CPU- und Speicher-Nutzung des Containers folgende Mindest- und Höchstgrenzen gesetzt werden:
+
+- Untergrenzen: CPU 250m / RAM 64Mi
+- Obergrenzen: CPU 500m / RAM 128Mi
+
+Starten Sie das Cluster und schauen Sie sich unter den "Stats" im Docker Desktop Dashboard die CPU- und RAM-Nutzung an.  
+
+Was würde passieren, wenn die Obergrenzen für CPU und RAM überschritten werden?  
+
+
 
 # Übung 4
 
