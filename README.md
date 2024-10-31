@@ -122,17 +122,17 @@ Passen Sie die Konfigurationsdatei aus Aufgabe 3 zunächst wieder so an, dass nu
 
 Was bedeuten die Angaben?  
 
-Starten Sie das Cluster und schauen Sie sich unter den "Stats" im Docker Desktop Dashboard die CPU- und RAM-Nutzung an.  
+- Starten Sie das Cluster und schauen Sie sich unter den "Stats" im Docker Desktop Dashboard die CPU- und RAM-Nutzung an.  
 
-Rufen Sie den Server über ihren Webbrowser auf und schauen Sie sich die Änderungen in der Auslastung in "Stats" an.
+- Rufen Sie den Server über ihren Webbrowser auf und schauen Sie sich die Änderungen in der Auslastung in "Stats" an.
 
-Was würde passieren, wenn die Obergrenzen für CPU und RAM überschritten werden?  
+- Was würde passieren, wenn die Obergrenzen für CPU und RAM überschritten werden?  
 
-Finden Sie heraus, welches die kleinstmöglichen Grenzen für CPU und Speicher sind. Passen Sie die Konfigurationsdatei entsprechend an.   
+- Finden Sie heraus, welches die kleinstmöglichen Grenzen für CPU und Speicher sind. Passen Sie die Konfigurationsdatei entsprechend an.   
 
-Starten Sie das Cluster erneut und prüfen Sie im Docker Desktop Dashboard den Status des Containers.  
+- Starten Sie das Cluster erneut und prüfen Sie im Docker Desktop Dashboard den Status des Containers.  
 
-Experimentieren Sie mit anderen Werten für die Ressource Limits und prüfen Sie den Status des Containers.
+- Experimentieren Sie mit anderen Werten für die Ressource Limits und prüfen Sie den Status des Containers.
 
 **Aufgabe 5 - Automatisches Skalieren mit den Horizontal Pod Autoscaler (HPA)**
 
