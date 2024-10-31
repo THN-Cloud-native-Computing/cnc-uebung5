@@ -1,5 +1,7 @@
 # Übung 5
 
+![kubernetes.png](kubernetes.png)
+
 **Hinweise:**
 
 Zunächst einmal können Sie dieses Repository wieder über git klonen.  
