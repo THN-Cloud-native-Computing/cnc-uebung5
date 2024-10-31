@@ -4,6 +4,8 @@
 
 Zunächst einmal können Sie dieses Repository wieder über git klonen.  
 
+Legen Sie für jede der Aufgaben einen Ordner an, in dem Sie die entsprechenden Konfigurationsdateien ablegen.
+
 **Aufgabe 1 - Eine Wordpress und MySQL App mit Docker Compose aufsetzen**
 
 In dieser Übung werden wir Docker Compose verwenden, um ein kleines Container-Cluster bestehend aus einer Wordpress-Instanz und einer MySQL-Instanz aufzusetzen. Hier finden Sie weitergehende Informationen zu Docker Compose: [https://docs.docker.com/compose/](https://docs.docker.com/compose/)  
