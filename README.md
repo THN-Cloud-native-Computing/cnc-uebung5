@@ -157,7 +157,9 @@ seq 1 1000 | parallel -j 100 curl -s http://localhost:30000/
    ```
 Schauen Sie sich nun die Änderungen in der Auslastung in "Stats" an.  
 
-Experimentieren Sie mit den Ressource Limits und der Anzahl und dem Umfang der parallelen Request so, dass man die Aktivitäten des HPA im Dashboard verfolgen kann.
+Experimentieren Sie mit den Ressource Limits und der Anzahl und dem Umfang der parallelen Request so, dass man die Aktivitäten des HPA im Dashboard verfolgen kann.  
+
+![cpu-usage.png](cpu-usage.png)
 
 **Aufgabe 6 - Health Checks**
 
