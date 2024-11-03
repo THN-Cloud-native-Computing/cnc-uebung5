@@ -111,7 +111,7 @@ Löschen Sie die Ressourcen anschließend wieder.
 
 Ändern Sie die Konfigurationsdatei so, dass jeweils 3 Pods mit Servern gestartet werden. Was passiert, wenn Sie die Container stoppen?
 
-**Aufgabe 4 - Ressource Limits**
+**Aufgabe 4 - Resource Limits**
 
 Passen Sie die Konfigurationsdatei aus Aufgabe 3 zunächst wieder so an, dass nur ein Pod gestartet wird.  
 
