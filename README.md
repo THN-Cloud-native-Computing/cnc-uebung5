@@ -32,6 +32,8 @@ Stoppen Sie danach die Container wieder.
 
 **Aufgabe 2 - Ein erstes Kubernetes Cluster aufsetzen**
 
+Hinweis: Hier finden Sie die Kubernetes Dokumentation: [Kubernetes](https://kubernetes.io/docs/home/)
+
 Installieren Sie [kubectl](https://kubernetes.io/de/docs/tasks/tools/install-kubectl/)
 
 Überprüfen Sie über die Kommandozeile, ob kubectl erfolgreich installiert wurde mittels
