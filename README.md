@@ -24,7 +24,7 @@ Prüfen Sie die beiden laufenden Container einmal im Docker Desktop Dashboard.
 
 Öffnen Sie ihren Browser mit der URL:
    ```bash
-http://localhost:8080
+http://localhost:8000
    ```
 Sie sollten nun die Wordpress-Startseite sehen.  
 
