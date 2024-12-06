@@ -161,7 +161,7 @@ Experimentieren Sie mit den Resource Limits und der Anzahl und dem Umfang der pa
 
 **Aufgabe 6 - Health Checks**
 
-Nehmen Sie die ursprünglich Konfigurationsdatei zu Aufgabe 3 als Ausgangspunkt.  Die Konfiguration soll nun um Health Checks erweitert werden.  
+Nehmen Sie die ursprüngliche Konfigurationsdatei zu Aufgabe 3 als Ausgangspunkt.  Die Konfiguration soll nun um Health Checks erweitert werden.  
 
 Was bedeuten in diesem Zusammenhang die Begriffe Liveness Probe und Readiness Probe?  
 
