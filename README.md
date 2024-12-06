@@ -134,7 +134,7 @@ Was bedeuten die Angaben?
 
 **Aufgabe 5 - Automatisches Skalieren mit den Horizontal Pod Autoscaler (HPA)**
 
-Setzen Sie die Ressource Limits zunächst wieder so, wie zu Beginn von Aufgabe 4.  
+Setzen Sie die Resource Limits zunächst wieder so, wie zu Beginn von Aufgabe 4.  
 
 Konfigurieren Sie nun einen Horizontal Pod Autoscaler (HPA), der bei überschreiten von 80% der CPU-Auslastung einen weiteren Pod startet.
 
@@ -155,7 +155,7 @@ seq 1 1000 | parallel -j 100 curl -s http://localhost:30000/
    ```
 Schauen Sie sich nun die Änderungen in der Auslastung in "Stats" an.  
 
-Experimentieren Sie mit den Ressource Limits und der Anzahl und dem Umfang der parallelen Request so, dass man die Aktivitäten des HPA im Dashboard verfolgen kann.  
+Experimentieren Sie mit den Resource Limits und der Anzahl und dem Umfang der parallelen Request so, dass man die Aktivitäten des HPA im Dashboard verfolgen kann.  
 
 ![cpu-usage.png](cpu-usage.png)
 
