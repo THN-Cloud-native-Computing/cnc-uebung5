@@ -10,6 +10,9 @@ Legen Sie für jede der Aufgaben einen Ordner an, in dem Sie die entsprechenden 
 
 **Aufgabe 1 - Eine Wordpress und MySQL App mit Docker Compose aufsetzen**
 
+**Hinweis:** Diese Übung ist aus Nane Kratzke, Cloud-Native
+Computing, Hanser Verlag, 2022, [Cloud-native Computing](https://cloud-native-computing.de) 
+
 In dieser Übung werden wir Docker Compose verwenden, um ein kleines Container-Cluster bestehend aus einer Wordpress-Instanz und einer MySQL-Instanz aufzusetzen. Hier finden Sie weitergehende Informationen zu Docker Compose: [https://docs.docker.com/compose/](https://docs.docker.com/compose/)  
 
 Legen Sie zunächst einen Ordner für diese Aufgabe an (z. B. Aufgabe1).  Legen Sie dort die folgende Docker Compose Konfigurationsdatei ab:
